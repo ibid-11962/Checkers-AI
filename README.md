@@ -35,8 +35,8 @@ Negamax is a simplification of a MinMax search algorithm that is valid when usin
 The heuristic was evaluated based on the following factors:
 
  - Did we win? Did we lose? (this is diluted a bit each time it gets passed up, so a quick win will be more appealing and a quick loss more unappealing) 
- - How many pieces do we have on the board? How many does our opponent (kings count as two)
- - How many total pieces are on the board? (This is considered a good thing if we're ahead, but a bad thing if we're behind.)
+ - How many pieces do we have on the board? How many does our opponent? (kings count as two)
+ - How many total pieces are on the board? (This is considered a bad thing if we're ahead, but a goodd thing if we're behind.)
  - How far advanced are our pawns? How about our opponent? (A pawn in the backrow is considered more valuable than the second and third rows for this, because leaving them there blocks the other player from getting kings)
  - A random integer to make equal moves no longer equal and the game nondeterministic.
  
