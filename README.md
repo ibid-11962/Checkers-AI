@@ -42,4 +42,4 @@ The heuristic was evaluated based on the following factors:
  
  # Misc
  
- An memorable bug I encountered when writing this program made me learn the hard way that `-1 * Integer.MIN_VALUE` does NOT equal `Integer.MAX_VALUE`. 
+ A memorable bug I encountered when writing this program made me learn the hard way that `-1 * Integer.MIN_VALUE` does NOT equal `Integer.MAX_VALUE`. 
