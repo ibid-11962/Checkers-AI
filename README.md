@@ -1,6 +1,6 @@
 # Checkers AI
 
-This is a Java program that plays checkers using a heuristic-based negamax with alpha-beta pruning.
+This is a Java program that plays checkers using a heuristic-based negamax search with alpha-beta pruning.
 
 # Set Up
 
