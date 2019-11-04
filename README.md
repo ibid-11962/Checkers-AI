@@ -30,14 +30,14 @@ The Board class represents a unique game state. A game state includes a 2D matri
 
 The Main class handles everything else, such as the actual gameplay, menus, and user input. It keeps a stack of `Boards` for the undo feature.
 
-Negamax as a simplification of a MinMax search algorithm that is valid when using a zero-sum heuristic. In a MinMax search we search to find the maximum heuristic during our turn with the understanding that the other player will try finding the minimum heuristic during their turn. In a Negamax search we take advantage of the fact that a zero-sum heuristic is always equal the opposite for the opponent as it is for us, and thus can use the same recursive function for both perspectives as long as we negate the result before passing it up.
+Negamax is a simplification of a MinMax search algorithm that is valid when using a zero-sum heuristic. In a MinMax search we search to find the maximum heuristic during our turn with the understanding that the other player will try finding the minimum heuristic during their turn. In a Negamax search we take advantage of the fact that a zero-sum heuristic is always equal the opposite for the opponent as it is for us, and thus can use the same recursive function for both perspectives as long as we negate the result before passing it up.
 
 The heuristic was evaluated based on the following factors:
 
  - Did we win? Did we lose? (this is diluted a bit each time it gets passed up, so a quick win will be more appealing and a quick loss more unappealing) 
  - How many pieces do we have on the board? How many does our opponent (kings count as two)
  - How many total pieces are on the board? (This is considered a good thing if we're ahead, but a bad thing if we're behind.)
- - How far advanced are our pawns? How about our opponent? (A pawn in the backrow is considered more valuable then the second and third rows for this, because leaving them there blocks the other player from getting kings)
+ - How far advanced are our pawns? How about our opponent? (A pawn in the backrow is considered more valuable than the second and third rows for this, because leaving them there blocks the other player from getting kings)
  - A random integer to make equal moves no longer equal and the game nondeterministic.
  
  # Misc
